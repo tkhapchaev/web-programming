@@ -1,0 +1,263 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: lighter;
+    background-color: #e6e6e6;
+}
+
+ul {
+    color: #000000;
+    list-style-type: none;
+    display: inline;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #737373;
+}
+
+a:active {
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:visited:hover {
+    color: #737373;
+}
+
+ul.navigation-bar {
+    font-size: 18px;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 0 60px;
+}
+
+ul.navigation-bar li {
+    display: inline;
+}
+
+.main-header {
+    color: #000000;
+    text-align: center;
+    font-size: 48px;
+    font-weight: lighter;
+    padding: 0 60px;
+}
+
+.main-header-2 {
+    font-weight: lighter;
+    text-align: center;
+    padding: 25px 60px;
+}
+
+.main-header-3 {
+    font-weight: lighter;
+    text-align: center;
+    padding: 25px 60px;
+}
+
+.catalog-header {
+    font-weight: lighter;
+    text-align: center;
+    padding: 25px 60px;
+}
+
+.week-top-header {
+    font-weight: lighter;
+    text-align: center;
+    padding: 25px 60px;
+}
+
+a.current-page {
+    color: #ff5f5f;
+}
+
+a.current-page:hover {
+    color: #ff5f5f;
+}
+
+.dot-ru {
+    color: #ff5f5f;
+}
+
+.main-description {
+    text-align: justify;
+    text-align-last: center;
+    color: #000000;
+    font-size: 16px;
+    padding: 0 60px;
+}
+
+.ascii-art {
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+.quote {
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+    padding: 0 60px;
+}
+
+.footer-signature {
+    text-align: right;
+    font-size: 14px;
+    color: #737373;
+    padding: 25px 60px 10px 60px;
+}
+
+.contacts {
+    text-align: justify;
+    text-align-last: center;
+    color: #000000;
+    font-size: 16px;
+    padding: 25px 60px;
+}
+
+.about-us {
+    text-align: justify;
+    text-align-last: center;
+    color: #000000;
+    font-size: 16px;
+    padding: 25px 60px 30px 60px;
+}
+
+.books-grid-container {
+    display: grid;
+    place-items: center;
+    grid-row-gap: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+.book-grid-item {
+    width: 290px;
+    height: 575px;
+    border: 1px solid #737373;
+    border-radius: 10px;
+}
+
+.book-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 240px;
+    height: 390px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.book-about {
+    text-align: center;
+}
+
+.book-title {
+    font-size: 16px;
+    color: #000000;
+    padding-bottom: 5px;
+}
+
+.book-author {
+    font-size: 14px;
+    color: #737373;
+    padding-bottom: 25px;
+}
+
+.book-price-box {
+    background-color: #ff5f5f;
+    border-radius: 10px;
+    width: 125px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.book-price-value {
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 60px;
+    margin: -26px auto;
+}
+
+.location-image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.location-image img {
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    ul.navigation-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .location-image {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .ascii-art {
+        display: none;
+    }
+}
+
+@media (min-width: 2000px) {
+    .books-grid-container {
+        grid-template-columns: repeat(5, 5fr);
+    }
+}
+
+@media (max-width: 2000px) {
+    .books-grid-container {
+        grid-template-columns: repeat(5, 5fr);
+    }
+}
+
+@media (max-width: 1800px) {
+    .books-grid-container {
+        grid-template-columns: repeat(4, 4fr);
+    }
+}
+
+@media (max-width: 1500px) {
+    .books-grid-container {
+        grid-template-columns: repeat(3, 3fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .books-grid-container {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .books-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

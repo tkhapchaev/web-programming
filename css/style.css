@@ -54,25 +54,25 @@ ul.navigation-bar li {
 .main-header-2 {
     font-weight: lighter;
     text-align: center;
-    padding: 25px 60px;
+    padding: 30px 60px;
 }
 
 .main-header-3 {
     font-weight: lighter;
     text-align: center;
-    padding: 25px 60px;
+    padding: 30px 60px;
 }
 
 .catalog-header {
     font-weight: lighter;
     text-align: center;
-    padding: 25px 60px;
+    padding: 30px 60px;
 }
 
 .week-top-header {
     font-weight: lighter;
     text-align: center;
-    padding: 25px 60px;
+    padding: 30px 60px;
 }
 
 a.current-page {
@@ -113,7 +113,7 @@ a.current-page:hover {
     text-align: right;
     font-size: 14px;
     color: #737373;
-    padding: 25px 60px 10px 60px;
+    padding: 30px 60px 10px 60px;
 }
 
 .contacts {
@@ -121,7 +121,7 @@ a.current-page:hover {
     text-align-last: center;
     color: #000000;
     font-size: 16px;
-    padding: 25px 60px;
+    padding: 30px 60px;
 }
 
 .about-us {
@@ -129,21 +129,19 @@ a.current-page:hover {
     text-align-last: center;
     color: #000000;
     font-size: 16px;
-    padding: 25px 60px 30px 60px;
+    padding: 30px 60px 30px 60px;
 }
 
 .books-grid-container {
     display: grid;
     place-items: center;
     grid-row-gap: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 30px;
+    padding: 0 60px 30px 60px;
 }
 
 .book-grid-item {
     width: 290px;
-    height: 570px;
+    height: 565px;
     border: 1px solid #737373;
     border-radius: 10px;
 }
@@ -151,6 +149,7 @@ a.current-page:hover {
 .book-image {
     position: relative;
     overflow: hidden;
+    padding: 25px 0;
 }
 
 .book-image img {
@@ -158,8 +157,7 @@ a.current-page:hover {
     height: 390px;
     display: block;
     margin: 0 auto;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    border: 1px solid #737373;
 }
 
 .book-about {
@@ -180,7 +178,7 @@ a.current-page:hover {
 
 .book-price-box {
     background-color: #ff5f5f;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 240px;
     height: 35px;
     margin: 0 auto;
@@ -196,27 +194,20 @@ a.current-page:hover {
 .location-image {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px 30px 60px;
 }
 
 .location-image img {
     width: 1000px;
     max-width: 100%;
     height: auto;
+    border: 1px solid #737373;
 }
 
 @media (max-width: 800px) {
     ul.navigation-bar {
         flex-direction: column;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 700px) {
-    .location-image {
-        display: none;
+        gap: 15px;
     }
 }
 

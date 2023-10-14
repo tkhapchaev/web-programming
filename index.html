@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <title>Главная | Читай.ru</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="книги, журналы, интернет-магазин, главная">
@@ -9,6 +10,7 @@
 </head>
 <body>
 <header>
+    <span class="itmo-web-programming-signature">[itmo-web-programming]</span>
     <a href="index.html">
         <h1 class="main-header">
             Читай<span class="dot-ru">.ru</span>
@@ -68,67 +70,57 @@
         <div class="books-grid-container">
             <div class="book-grid-item">
                 <div class="book-image">
-                    <img src="../images/books/anna-karenina.jpeg" alt="Анна Каренина (Лев Николаевич Толстой)">
+                    <img src="images/books/anna-karenina.jpeg" alt="Анна Каренина (Лев Николаевич Толстой)">
                 </div>
                 <div class="book-about">
-                    <div class="book-title">Анна Каренина</div>
-                    <div class="book-author">Лев Николаевич Толстой</div>
-                    <div class="book-price">
-                        <div class="book-price-box"></div>
-                        <div class="book-price-value">327 ₽</div>
-                    </div>
+                    <h3 class="book-title">Анна Каренина</h3>
+                    <h4 class="book-author">Лев Николаевич Толстой</h4>
+                    <button class="book-buy-button">Купить</button>
+                    <h5 class="book-price-value">327 ₽</h5>
                 </div>
             </div>
             <div class="book-grid-item">
                 <div class="book-image">
-                    <img src="../images/books/boycovskiy-club.jpeg" alt="Бойцовский клуб (Чак Паланик)">
+                    <img src="images/books/boycovskiy-club.jpeg" alt="Бойцовский клуб (Чак Паланик)">
                 </div>
                 <div class="book-about">
-                    <div class="book-title">Бойцовский клуб</div>
-                    <div class="book-author">Чак Паланик</div>
-                    <div class="book-price">
-                        <div class="book-price-box"></div>
-                        <div class="book-price-value">237 ₽</div>
-                    </div>
+                    <h3 class="book-title">Бойцовский клуб</h3>
+                    <h4 class="book-author">Чак Паланик</h4>
+                    <button class="book-buy-button">Купить</button>
+                    <h5 class="book-price-value">237 ₽</h5>
                 </div>
             </div>
             <div class="book-grid-item">
                 <div class="book-image">
-                    <img src="../images/books/idiot.jpeg" alt="Идиот (Фёдор Михайлович Достоевский)">
+                    <img src="images/books/idiot.jpeg" alt="Идиот (Фёдор Михайлович Достоевский)">
                 </div>
                 <div class="book-about">
-                    <div class="book-title">Идиот</div>
-                    <div class="book-author">Фёдор Михайлович Достоевский</div>
-                    <div class="book-price">
-                        <div class="book-price-box"></div>
-                        <div class="book-price-value">249 ₽</div>
-                    </div>
+                    <h3 class="book-title">Идиот</h3>
+                    <h4 class="book-author">Фёдор Михайлович Достоевский</h4>
+                    <button class="book-buy-button">Купить</button>
+                    <h5 class="book-price-value">249 ₽</h5>
                 </div>
             </div>
             <div class="book-grid-item">
                 <div class="book-image">
-                    <img src="../images/books/malenkiy-princ.jpeg" alt="Маленький принц (Антуан де Сент-Экзюпери)">
+                    <img src="images/books/malenkiy-princ.jpeg" alt="Маленький принц (Антуан де Сент-Экзюпери)">
                 </div>
                 <div class="book-about">
-                    <div class="book-title">Маленький принц</div>
-                    <div class="book-author">Антуан де Сент-Экзюпери</div>
-                    <div class="book-price">
-                        <div class="book-price-box"></div>
-                        <div class="book-price-value">351 ₽</div>
-                    </div>
+                    <h3 class="book-title">Маленький принц</h3>
+                    <h4 class="book-author">Антуан де Сент-Экзюпери</h4>
+                    <button class="book-buy-button">Купить</button>
+                    <h5 class="book-price-value">351 ₽</h5>
                 </div>
             </div>
             <div class="book-grid-item">
                 <div class="book-image">
-                    <img src="../images/books/martin-iden.jpeg" alt="Мартин Иден (Джек Лондон)">
+                    <img src="images/books/martin-iden.jpeg" alt="Мартин Иден (Джек Лондон)">
                 </div>
                 <div class="book-about">
-                    <div class="book-title">Мартин Иден</div>
-                    <div class="book-author">Джек Лондон</div>
-                    <div class="book-price">
-                        <div class="book-price-box"></div>
-                        <div class="book-price-value">250 ₽</div>
-                    </div>
+                    <h3 class="book-title">Мартин Иден</h3>
+                    <h4 class="book-author">Джек Лондон</h4>
+                    <button class="book-buy-button">Купить</button>
+                    <h5 class="book-price-value">250 ₽</h5>
                 </div>
             </div>
         </div>
@@ -136,7 +128,7 @@
 </main>
 <footer>
     <section>
-        <div class="footer-signature">
+        <div class="footer-personal-signature">
             <p>Тимур Хапчаев © 2023</p>
         </div>
     </section>

@@ -121,7 +121,7 @@ a.current-page:active {
     position: absolute;
     font-family: "Source Code Pro", sans-serif;
     font-size: 12px;
-    color: #b9b9b9;
+    color: #a6a6a6;
     top: 10px;
     left: 10px;
 }
@@ -230,17 +230,31 @@ a.current-page:active {
     font-weight: lighter;
 }
 
-.location-image {
+.location {
     display: flex;
     justify-content: center;
     padding: 0 60px 30px 60px;
 }
 
-.location-image img {
+.location img {
     width: 1000px;
     max-width: 100%;
     height: auto;
     border: 1px solid #737373;
+}
+
+.page-load-time {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 12px;
+    color: #a6a6a6;
+    padding: 30px 0 0 0;
+}
+
+.page-timer {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 12px;
+    color: #a6a6a6;
+    padding: 30px 0 20px 0;
 }
 
 @media (max-width: 800px) {

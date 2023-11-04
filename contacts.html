@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="книги, журналы, интернет-магазин, контакты">
     <meta name="description" content="Контакты Читай.ru">
+    <script src="javascript/currentPage.js"></script>
+    <script src="javascript/pageLoadTime.js"></script>
+    <script src="javascript/pageTimer.js"></script>
 </head>
 <body>
 <header>
@@ -18,11 +21,11 @@
     </a>
     <nav>
         <ul class="navigation-bar">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="top_of_the_week.html">Топ за неделю</a></li>
-            <li><a href="about_us.html">О нас</a></li>
-            <li><a class="current-page" href="contacts.html">Контакты</a></li>
+            <li><a id="index" href="index.html">Главная</a></li>
+            <li><a id="catalog" href="catalog.html">Каталог</a></li>
+            <li><a id="top-of-the-week" href="top-of-the-week.html">Топ за неделю</a></li>
+            <li><a id="about-us" href="about-us.html">О нас</a></li>
+            <li><a id="contacts" href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
 </header>
@@ -35,7 +38,9 @@
                 Телефон горячей линии: 8 (812) 705-55-30
             </p>
         </div>
-        <div class="location-image">
+    </section>
+    <section>
+        <div class="location">
             <img src="images/contacts/location.png" alt="г. Санкт-Петербург, Кронверкский проспект, д. 49">
         </div>
     </section>
@@ -45,6 +50,12 @@
         <div class="footer-personal-signature">
             <p>Тимур Хапчаев © 2023</p>
         </div>
+    </section>
+    <section>
+        <span class="page-load-time">[page-load-time: <span id="page-load-time-value">undefined</span> ms]</span>
+    </section>
+    <section>
+        <span class="page-timer">[page-timer: <span id="page-timer-value">0</span> s]</span>
     </section>
 </footer>
 </body>

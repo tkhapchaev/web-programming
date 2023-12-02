@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <title>Отзывы | Читай.ru</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="книги, журналы, интернет-магазин, отзывы">
+    <meta name="description" content="Отзывы Читай.ru">
+</head>
+<body>
+<header>
+    <span class="itmo-web-programming-signature">[itmo-web-programming]</span>
+    <a href="index.html">
+        <h1 class="main-header">
+            Читай<span class="dot-ru">.ru</span>
+        </h1>
+    </a>
+    <nav>
+        <ul class="navigation-bar">
+            <li><a id="index" href="index.html">Главная</a></li>
+            <li><a id="catalog" href="catalog.html">Каталог</a></li>
+            <li><a id="top-of-the-week" href="top-of-the-week.html">Топ за неделю</a></li>
+            <li><a id="feedback" href="feedback.html">Отзывы</a></li>
+            <li><a id="about-us" href="about-us.html">О нас</a></li>
+            <li><a id="contacts" href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <div class="feedback-description">
+            <p>Здесь можно оставить отзыв о книге, даже если она была куплена не на Читай.ru.<br>
+            Обратная связь помогает нашей команде формировать лучшие книги недели и пополнять каталог актуальной, востребованной литературой.</p>
+        </div>
+    </section>
+    <section>
+        <form onsubmit="submitFeedback()">
+            <div class="feedback-container">
+                <label for="feedback-input-author"></label>
+                <input type="text" id="feedback-input-author" class="feedback-input" placeholder="Автор">
+                <label for="feedback-input-book"></label>
+                <input type="text" id="feedback-input-book" class="feedback-input" placeholder="Название">
+                <label for="feedback-input-contents"></label>
+                <input type="text" id="feedback-input-contents" class="feedback-input" placeholder="Отзыв">
+                <input type="button" value="Добавить отзыв" class="add-feedback" onclick="addFeedback()">
+                <input type="submit" value="Отправить" class="submit-feedback">
+            </div>
+        </form>
+        <ul id="feedback-list" class="feedback-list"></ul>
+    </section>
+</main>
+<footer>
+    <section>
+        <div class="footer-personal-signature">
+            <p>Тимур Хапчаев © 2023</p>
+        </div>
+    </section>
+    <section>
+        <span class="page-load-time">[page-load-time: <span id="page-load-time-value">undefined</span> ms]</span>
+    </section>
+    <section>
+        <span class="page-timer">[page-timer: <span id="page-timer-value">0</span> s]</span>
+    </section>
+</footer>
+<script src="scripts/currentPage.js"></script>
+<script src="scripts/pageLoadTime.js"></script>
+<script src="scripts/pageTimer.js"></script>
+<script src="scripts/feedback.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

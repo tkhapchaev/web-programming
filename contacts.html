@@ -7,9 +7,6 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="книги, журналы, интернет-магазин, контакты">
     <meta name="description" content="Контакты Читай.ru">
-    <script src="javascript/currentPage.js"></script>
-    <script src="javascript/pageLoadTime.js"></script>
-    <script src="javascript/pageTimer.js"></script>
 </head>
 <body>
 <header>
@@ -24,6 +21,7 @@
             <li><a id="index" href="index.html">Главная</a></li>
             <li><a id="catalog" href="catalog.html">Каталог</a></li>
             <li><a id="top-of-the-week" href="top-of-the-week.html">Топ за неделю</a></li>
+            <li><a id="feedback" href="feedback.html">Отзывы</a></li>
             <li><a id="about-us" href="about-us.html">О нас</a></li>
             <li><a id="contacts" href="contacts.html">Контакты</a></li>
         </ul>
@@ -39,9 +37,9 @@
             </p>
         </div>
     </section>
-    <section>
+    <section class="loc">
         <div class="location">
-            <img src="images/contacts/location.png" alt="г. Санкт-Петербург, Кронверкский проспект, д. 49">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3994.758264312735!2d30.30815146147933!3d59.95706019023301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963141499f00b9%3A0x630ff799025ac60a!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNCi0JzQng!5e0!3m2!1sru!2sru!4v1700669093912!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 </main>
@@ -58,5 +56,8 @@
         <span class="page-timer">[page-timer: <span id="page-timer-value">0</span> s]</span>
     </section>
 </footer>
+<script src="scripts/currentPage.js"></script>
+<script src="scripts/pageLoadTime.js"></script>
+<script src="scripts/pageTimer.js"></script>
 </body>
 </html>

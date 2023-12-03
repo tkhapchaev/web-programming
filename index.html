@@ -7,9 +7,6 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="книги, журналы, интернет-магазин, главная">
     <meta name="description" content="Книжный интернет-магазин Читай.ru">
-    <script src="javascript/currentPage.js"></script>
-    <script src="javascript/pageLoadTime.js"></script>
-    <script src="javascript/pageTimer.js"></script>
 </head>
 <body>
 <header>
@@ -24,6 +21,7 @@
             <li><a id="index" href="index.html">Главная</a></li>
             <li><a id="catalog" href="catalog.html">Каталог</a></li>
             <li><a id="top-of-the-week" href="top-of-the-week.html">Топ за неделю</a></li>
+            <li><a id="feedback" href="feedback.html">Отзывы</a></li>
             <li><a id="about-us" href="about-us.html">О нас</a></li>
             <li><a id="contacts" href="contacts.html">Контакты</a></li>
         </ul>
@@ -33,15 +31,13 @@
     <h2 class="main-header-2">Книжный интернет-магазин</h2>
     <section>
         <div class="main-description">
-            <p>
-                Мы — твой надёжный партнёр в мире чтения. У нас ты найдёшь огромный выбор книг на
-                любой вкус и интерес. Мы предлагаем только качественную литературу от лучших
-                издательств, в том числе бестселлеры, классические произведения, научно-популярные
-                работы, художественную литературу и многое другое. Наша команда профессионалов всегда
-                готова помочь тебе с выбором и оформлением заказа, а быстрая доставка и удобная оплата
-                сделают покупку книг у нас максимально комфортной. Читай с удовольствием вместе с нашим
-                интернет-магазином!
-            </p>
+            <p>Мы — твой надёжный партнёр в мире чтения. У нас ты найдёшь огромный выбор книг на
+            любой вкус и интерес. Мы предлагаем только качественную литературу от лучших
+            издательств, в том числе бестселлеры, классические произведения, научно-популярные
+            работы, художественную литературу и многое другое. Наша команда профессионалов всегда
+            готова помочь тебе с выбором и оформлением заказа, а быстрая доставка и удобная оплата
+            сделают покупку книг у нас максимально комфортной. Читай с удовольствием вместе с нашим
+            интернет-магазином!</p>
         </div>
         <div class="quote">
             <article>
@@ -70,63 +66,7 @@
     </section>
     <h2 class="main-header-3">Новинки</h2>
     <section>
-        <div class="books-grid-container">
-            <div class="book-grid-item">
-                <div class="book-image">
-                    <img src="images/books/anna-karenina.jpeg" alt="Анна Каренина (Лев Николаевич Толстой)">
-                </div>
-                <div class="book-about">
-                    <h3 class="book-title">Анна Каренина</h3>
-                    <h4 class="book-author">Лев Николаевич Толстой</h4>
-                    <button class="book-buy-button">Купить</button>
-                    <h5 class="book-price-value">327 ₽</h5>
-                </div>
-            </div>
-            <div class="book-grid-item">
-                <div class="book-image">
-                    <img src="images/books/boycovskiy-club.jpeg" alt="Бойцовский клуб (Чак Паланик)">
-                </div>
-                <div class="book-about">
-                    <h3 class="book-title">Бойцовский клуб</h3>
-                    <h4 class="book-author">Чак Паланик</h4>
-                    <button class="book-buy-button">Купить</button>
-                    <h5 class="book-price-value">237 ₽</h5>
-                </div>
-            </div>
-            <div class="book-grid-item">
-                <div class="book-image">
-                    <img src="images/books/idiot.jpeg" alt="Идиот (Фёдор Михайлович Достоевский)">
-                </div>
-                <div class="book-about">
-                    <h3 class="book-title">Идиот</h3>
-                    <h4 class="book-author">Фёдор Михайлович Достоевский</h4>
-                    <button class="book-buy-button">Купить</button>
-                    <h5 class="book-price-value">249 ₽</h5>
-                </div>
-            </div>
-            <div class="book-grid-item">
-                <div class="book-image">
-                    <img src="images/books/malenkiy-princ.jpeg" alt="Маленький принц (Антуан де Сент-Экзюпери)">
-                </div>
-                <div class="book-about">
-                    <h3 class="book-title">Маленький принц</h3>
-                    <h4 class="book-author">Антуан де Сент-Экзюпери</h4>
-                    <button class="book-buy-button">Купить</button>
-                    <h5 class="book-price-value">351 ₽</h5>
-                </div>
-            </div>
-            <div class="book-grid-item">
-                <div class="book-image">
-                    <img src="images/books/martin-iden.jpeg" alt="Мартин Иден (Джек Лондон)">
-                </div>
-                <div class="book-about">
-                    <h3 class="book-title">Мартин Иден</h3>
-                    <h4 class="book-author">Джек Лондон</h4>
-                    <button class="book-buy-button">Купить</button>
-                    <h5 class="book-price-value">250 ₽</h5>
-                </div>
-            </div>
-        </div>
+        <div class="books-grid-container"></div>
     </section>
 </main>
 <footer>
@@ -142,5 +82,9 @@
         <span class="page-timer">[page-timer: <span id="page-timer-value">0</span> s]</span>
     </section>
 </footer>
+<script src="scripts/currentPage.js"></script>
+<script src="scripts/pageLoadTime.js"></script>
+<script src="scripts/pageTimer.js"></script>
+<script src="scripts/booksLoader.js"></script>
 </body>
 </html>

@@ -85,10 +85,22 @@ function submitFeedback() {
     }
 }
 
-function drawFeedback(book, author, contents, id) {
+function drawFeedback(author, book, contents, id) {
+    if (author.length > 120) {
+        author = split(author)
+    }
+
+    if (book.length > 120) {
+        book = split(book)
+    }
+
+    if (contents.length > 120) {
+        contents = split(contents)
+    }
+
     const currentFeedback = document.createElement("li");
     currentFeedback.dataset.id = id;
-    currentFeedback.textContent = `${book} (${author}): ${contents}`;
+    currentFeedback.textContent = `[${author}] \"${book}\": ${contents}`;
 
     const removeButton = document.createElement("span");
     removeButton.className = "remove-button";
@@ -136,4 +148,14 @@ function removeObjectById(array, id) {
     }
 
     return array;
+}
+
+function split(string) {
+    const chunks = [];
+
+    for (let i = 0; i < string.length; i += 120) {
+        chunks.push(string.substring(i, i + 120));
+    }
+
+    return chunks.join('\n');
 }

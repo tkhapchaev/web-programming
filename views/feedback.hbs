@@ -1,0 +1,19 @@
+{{!< main}}
+<main>
+    <section>
+        <div class="feedback-description">
+            <p>Здесь можно оставить отзыв о книге, даже если она была куплена не на Читай.ru. Обратная связь помогает нашей команде формировать лучшие книги недели и пополнять каталог актуальной, востребованной литературой.</p>
+        </div>
+    </section>
+    <section>
+        <form id="feedback-form">
+            <div class="feedback-container">
+                <input type="text" id="feedback-input-author" class="feedback-input" placeholder="Автор" required>
+                <input type="text" id="feedback-input-book" class="feedback-input" placeholder="Название книги" required>
+                <input type="text" id="feedback-input-contents" class="feedback-input" placeholder="Отзыв" required>
+                <input type="submit" value="Отправить отзыв" class="submit-feedback-button">
+            </div>
+        </form>
+        <ul id="feedback-list" class="feedback-list"></ul>
+    </section>
+</main>

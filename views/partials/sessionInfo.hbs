@@ -1,0 +1,6 @@
+{{#if user}}
+    <div style="font-size: 14px">Вы вошли как {{user.name}}</div>
+    <a href="/auth/logout" style="font-size: 14px">Выйти</a>
+{{else}}
+    <a href="/auth/login" style="font-size: 14px">Войти</a>
+{{/if}}

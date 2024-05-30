@@ -1,0 +1,18 @@
+<header>
+    <span class="itmo-web-programming-signature">[itmo-web-programming]</span>
+    <a href="/">
+        <h1 class="main-header">Читай<span class="dot-ru">.ru</span></h1>
+    </a>
+    <div class="user-display"></div>
+    <div class="login-form-container" style="display: none;">
+        <form action="/auth/login" method="get" class="login-form">
+            <button type="submit" class="login-button">Войти</button>
+        </form>
+    </div>
+    <div class="logout-form-container" style="display: none;">
+        <form action="/auth/logout" method="post">
+            <button type="submit" class="logout-button">Выйти</button>
+        </form>
+    </div>
+    {{>nav}}
+</header>
